@@ -5,6 +5,7 @@
 Aim: we are going to calculate the Flop ratio after the systhesis of RTL of Picorv32a.
 
 ### Step 1 - Setting up openlane environment
+![OpenLane setup](images/openlane_setup.png)
 
 ### Step 2 - Run Synthesis of the RTL
 
