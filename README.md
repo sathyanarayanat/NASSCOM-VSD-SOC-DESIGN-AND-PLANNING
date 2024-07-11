@@ -4,6 +4,23 @@
 - Introduction
 - [Day 1 - Synthesis of RTL](#Day-1--Synthesis-of-RTL)
 
+as
+asd
+a
+sd
+ad
+
+ad
+a
+sd
+ad
+
+das
+d
+a
+sd
+a
+d
 ## Day 1 - Synthesis of RTL
 
 Aim: we are going to calculate the Flop ratio after the systhesis of RTL of Picorv32a.
