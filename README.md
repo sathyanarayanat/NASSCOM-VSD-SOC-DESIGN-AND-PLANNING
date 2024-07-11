@@ -1,6 +1,10 @@
 # NASSCOM-VSD-SOC-DESIGN-AND-PLANNING
 
-## Day-1 - Synthesis of RTL
+# Table of Contents
+- Introduction
+- [Day 1 - Synthesis of RTL](#Day-1--Synthesis-of-RTL)
+
+## Day 1 - Synthesis of RTL
 
 Aim: we are going to calculate the Flop ratio after the systhesis of RTL of Picorv32a.
 
