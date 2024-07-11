@@ -102,7 +102,7 @@ Generate the final GDSII file, which is used for manufacturing the chip.
 
 Below is the representation of the RTL to GDSII flow
 
-![flowchart]()
+![flowchart](images/openlane-flow.png)
 
 ## Day 1 - Synthesis of RTL
 
