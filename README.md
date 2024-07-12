@@ -119,4 +119,42 @@ Aim: we are going to calculate the Flop ratio after the systhesis of RTL of Pico
 
 Flop ratio = number of d-flipflops / Total number of cells = 1613/14876 = 0.10842969 .
 
+## Day 2 - Good floorplan and vs Bad floorplan and Itroduction to library cells
+
+### Chip floor planning considerations
+
+1. Height and width of core and die
+
+**core**: The "core" refers to the central part of an integrated circuit (IC) that contains the primary functional elements of the chip, such as the central processing unit (CPU), graphics processing unit (GPU), digital signal processor (DSP), or other specialized processing units.
+
+**Die**: The "die" is the actual piece of silicon wafer that is cut from the larger wafer during the manufacturing process. It contains the complete integrated circuit, including the core and all peripheral components.
+
+- Utilization factor = Area of the netlist blocks/ total area of core .
+- Aspect ratio = Height/width. (of core)
+
+2. Define location of pre-placed cells
+
+   Some of the IPs are placed by the user before automated placement and routing and placement. Hence they are called pre-placed cells.
+
+3. Surround pre-placed cell with decoupling capacitor.
+
+  The state change from a logic '0' to logic '1' requires charge from a voltage source. But, due to the connecting wires
+from the voltage source to the filpflops, there might be voltage drop because of resistance of the wires. If the voltage drop is less than the noise margin, there will no state change. To mitigate this issuse , we make use of decoupling capacitors. These decoupling capacitors are placed near all the sub-blocks.
+
+4. Power planning
+
+  Power planning is a critical aspect of integrated circuit (IC) and system-on-chip (SoC) design that involves creating an efficient power distribution network (PDN) to ensure reliable power delivery to all components of the chip. 
+
+5. Pin placement
+
+   The I/O pins are placed between the boundaries of die and core. The pins are placed in such a way that they are close to the blocks that they feed as input to. The clocks pins are bigger than the normal pins as to provide least resistance path since clocks provide continuous signals throughout the chip function.
+
+6. Logical cells placement blockage
+
+   we make sure to block the pin placement region as to avoid the automated place and route from accessing this region. This is called Logical cells placement blockage.
+
+### Running floorplan
+
+
+
 
