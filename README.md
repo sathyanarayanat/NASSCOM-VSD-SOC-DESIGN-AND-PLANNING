@@ -3,6 +3,7 @@
 # Table of Contents
 - **Introduction**
 - **Day 1 - Synthesis of RTL**
+- **Day 2 - Good floorplan and vs Bad floorplan and Itroduction to library cells**
 
 ## Introduction
 OpenLane is an open-source ASIC (Application-Specific Integrated Circuit) flow that facilitates the design and implementation of digital integrated circuits. It provides a complete RTL-to-GDSII (Register Transfer Level to Graphic Data System II) flow, leveraging various open-source EDA (Electronic Design Automation) tools. Developed by Efabless Corporation, OpenLane aims to lower the barrier to entry for ASIC design by providing accessible, high-quality tools and resources.
