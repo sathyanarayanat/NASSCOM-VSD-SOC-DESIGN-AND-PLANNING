@@ -138,22 +138,29 @@ Flop ratio = number of d-flipflops / Total number of cells = 1613/14876 = 0.1084
 
 3. Surround pre-placed cell with decoupling capacitor.
 
-  The state change from a logic '0' to logic '1' requires charge from a voltage source. But, due to the connecting wires
-from the voltage source to the filpflops, there might be voltage drop because of resistance of the wires. If the voltage drop is less than the noise margin, there will no state change. To mitigate this issuse , we make use of decoupling capacitors. These decoupling capacitors are placed near all the sub-blocks.
+     The state change from a logic '0' to logic '1' requires charge from a voltage source. But, due to the connecting wires
+  from the voltage source to the filpflops, there might be voltage drop because of resistance of the wires. If the voltage drop is less than the noise margin, there will no 
+  state change. To mitigate this issuse , we make use of decoupling capacitors. These decoupling capacitors are placed near all the sub-blocks.
 
 4. Power planning
 
-  Power planning is a critical aspect of integrated circuit (IC) and system-on-chip (SoC) design that involves creating an efficient power distribution network (PDN) to ensure reliable power delivery to all components of the chip. 
+     Power planning is a critical aspect of integrated circuit (IC) and system-on-chip (SoC) design that involves creating an efficient power distribution network (PDN) to 
+   ensure reliable power delivery to all components of the chip. 
 
 5. Pin placement
 
-   The I/O pins are placed between the boundaries of die and core. The pins are placed in such a way that they are close to the blocks that they feed as input to. The clocks pins are bigger than the normal pins as to provide least resistance path since clocks provide continuous signals throughout the chip function.
+    The I/O pins are placed between the boundaries of die and core. The pins are placed in such a way that they are close to the blocks that they feed as input to. The 
+  clocks pins are bigger than the normal pins as to provide least resistance path since clocks provide continuous signals throughout the chip function.
 
 6. Logical cells placement blockage
 
    we make sure to block the pin placement region as to avoid the automated place and route from accessing this region. This is called Logical cells placement blockage.
 
 ### Running floorplan
+
+![run_floorplan](/images/run_floorplan_1)
+
+![run_floorplan](/images/run_floorplan_2)
 
 
 
