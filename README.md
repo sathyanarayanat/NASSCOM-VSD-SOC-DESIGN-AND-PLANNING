@@ -125,9 +125,11 @@ Flop ratio = number of d-flipflops / Total number of cells = 1613/14876 = 0.1084
 
 1. Height and width of core and die
 
-**core**: The "core" refers to the central part of an integrated circuit (IC) that contains the primary functional elements of the chip, such as the central processing unit (CPU), graphics processing unit (GPU), digital signal processor (DSP), or other specialized processing units.
+   **core**: The "core" refers to the central part of an integrated circuit (IC) that contains the primary functional elements of the chip, such as the central processing 
+  unit (CPU), graphics processing unit (GPU), digital signal processor (DSP), or other specialized processing units.
 
-**Die**: The "die" is the actual piece of silicon wafer that is cut from the larger wafer during the manufacturing process. It contains the complete integrated circuit, including the core and all peripheral components.
+   **Die**: The "die" is the actual piece of silicon wafer that is cut from the larger wafer during the manufacturing process. It contains the complete integrated circuit, 
+  including the core and all peripheral components.
 
 - Utilization factor = Area of the netlist blocks/ total area of core .
 - Aspect ratio = Height/width. (of core)
@@ -158,10 +160,16 @@ Flop ratio = number of d-flipflops / Total number of cells = 1613/14876 = 0.1084
 
 ### Running floorplan
 
-![run_floorplan](/images/run_floorplan_1)
+![run_floorplan](images/run_floorplan_1.png)
 
-![run_floorplan](/images/run_floorplan_2)
+![run_floorplan](/images/run_floorplan_2.png)
 
+### Io log
 
+![io log](/images/ioplaner_log.png)
+
+### Magic layout view
+
+![io log](/images/floorplan_magic.png)
 
 
