@@ -162,7 +162,7 @@ Flop ratio = number of d-flipflops / Total number of cells = 1613/14876 = 0.1084
 
 ![run_floorplan](images/run_floorplan_1.png)
 
-![run_floorplan](/images/run_floorplan_2.png)
+![run_floorplan](/images/run_floorplan__2.png)
 
 ### Io log
 
