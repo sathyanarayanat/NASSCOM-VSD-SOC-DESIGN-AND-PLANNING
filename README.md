@@ -70,7 +70,7 @@ Function: Formal Verification
 
 Description: Used for formal verification of designs.
 
-###The OpenLane Flow
+### The OpenLane Flow
 The typical flow in OpenLane consists of several stages, each corresponding to a specific phase in the ASIC design process:
 
 - *Synthesis:*
@@ -173,4 +173,13 @@ Flop ratio = number of d-flipflops / Total number of cells = 1613/14876 = 0.1084
 
 ![io log](/images/floorplan_magic.png)
 
+### Library binding and placement
 
+1. Netlist binding and  Initial place design
+
+  - We make use of library files to convert our design components to actual blocks. This library file contains a detailed description of the standard cells or components that can be used to design and implement digital circuits.
+
+  - Then we start with initial placement of cells. we make sure that the blocks are placed close to thier respective inputs and outputs.
+
+    ![initial placement diagram]()
+  
