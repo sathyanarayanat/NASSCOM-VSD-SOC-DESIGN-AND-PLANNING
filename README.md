@@ -175,11 +175,17 @@ Flop ratio = number of d-flipflops / Total number of cells = 1613/14876 = 0.1084
 
 ### Library binding and placement
 
-1. Netlist binding and  Initial place design
+1. Netlist binding
 
   - We make use of library files to convert our design components to actual blocks. This library file contains a detailed description of the standard cells or components that can be used to design and implement digital circuits.
 
-  - Then we start with initial placement of cells. we make sure that the blocks are placed close to thier respective inputs and outputs.
+2. Inital placement
+  - we start with initial placement of cells. we make sure that the blocks are placed close to thier respective inputs and outputs.
 
     ![initial placement diagram](images/intial_place.png)
-     (Image courtesy: [vlsisystemdesign](https://www.vlsisystemdesign.com/))
+    (Image courtesy: [vlsisystemdesign](https://www.vlsisystemdesign.com/))
+    
+3. Optimizing placement
+
+ - In some scenarios, the distance between the IO pin and the sub-blocks might be large enough such that it may encounter signal integrity loss. In such secaniors, we place buffers betwwen them . These buffers act as repeater ensuring that signal integrity is maintained till the signal reaches the sub-block from the IO pin.
+   
