@@ -214,3 +214,9 @@ Flop ratio = number of d-flipflops / Total number of cells = 1613/14876 = 0.1084
   
 - **Layout design step**: With help of eular's path devired from the p-mos and n-mos network paths, we draw stick diagrams.
                           We make use of this stick diagram to come up with the layout diagram of the system.
+
+- **Characterization**: We feed parameters obtained from SPICE list of circuits into a Characterization software called GUNA. This software tool provides us with timing characterization, power characterization and noise characterization.
+
+  ![GUNA](images/guna.png)
+
+  
