@@ -205,3 +205,12 @@ Flop ratio = number of d-flipflops / Total number of cells = 1613/14876 = 0.1084
 
 ![placement view 1](images/magic_place_2.png)
 
+### Cell design and characterization flows
+
+- **Inputs for cell design flow**: Process design kits (PDKs), DRC nad LVS , SPICE models, library and user defined specs.
+  
+- **Circuit design step**: We design the p-mos--n-mos diagram as per the specifications. we take into consideration sveral 
+                       paramters during this step.
+  
+- **Layout design step**: With help of eular's path devired from the p-mos and n-mos network paths, we draw stick diagrams.
+                          We make use of this stick diagram to come up with the layout diagram of the system.
