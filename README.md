@@ -250,3 +250,4 @@ A SPICE deck refers to a file containing the input netlist and commands used by 
 Below is an example of a CMOS invertr spice deck.
 
 ![spice deck](images/spice_deck.png)
+(Image courtesy [vlsisystemdesign](https://www.vlsisystemdesign.com))
