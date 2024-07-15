@@ -234,3 +234,13 @@ Flop ratio = number of d-flipflops / Total number of cells = 1613/14876 = 0.1084
   ```
 
 ![floorplan.tcl](images/flr_tcl.png)
+
+We now change the IO parameter and run floorplan again.
+
+![change_parameter](images/chnage_io.png)
+
+The below picture shows the change in the IO placement
+
+![changed_io](images/chng_io_place.png)
+
+### SPICE deck creation for CMOS inverter
