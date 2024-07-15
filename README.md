@@ -237,7 +237,7 @@ Flop ratio = number of d-flipflops / Total number of cells = 1613/14876 = 0.1084
 
 We now change the IO parameter and run floorplan again.
 
-![change_parameter](images/chnage_io.png)
+![change_parameter](images/change_io.png)
 
 The below picture shows the change in the IO placement
 
