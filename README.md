@@ -225,8 +225,9 @@ Flop ratio = number of d-flipflops / Total number of cells = 1613/14876 = 0.1084
 
    IO placement can be chnaged by making chnages in the floorplan parameters. This is available in the "floorplan.tcl" file.
   
- - command to view the floorplan.tcl file
-   ```
+ - command to view the floorplan.tcl file  
+  
+```
   cd /Desktop/work/tools/openlane_working_dir/openlane/configuratons/
 
   cd less floorplan.tcl
