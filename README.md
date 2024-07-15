@@ -248,32 +248,5 @@ The below picture shows the change in the IO placement
 A SPICE deck refers to a file containing the input netlist and commands used by the SPICE simulation program. 
 
 Below is an example of a CMOS invertr spice deck.
-```
-* CMOS Inverter Example
 
-* Define the power supply voltage
-Vdd Vdd 0 DC 5V
-
-* Define the input voltage source
-Vin in 0 PULSE(0 5 0 1n 1n 10n 20n)
-
-* Define the NMOS transistor (M1)
-M1 out in 0 0 NMOS L=0.18u W=1.0u
-
-* Define the PMOS transistor (M2)
-M2 out in Vdd Vdd PMOS L=0.18u W=1.5u
-
-* Load capacitance
-Cload out 0 10f
-
-* Define NMOS model parameters
-.model NMOS NMOS (LEVEL=1 VTO=0.7 KP=120u LAMBDA=0.02)
-
-* Define PMOS model parameters
-.model PMOS PMOS (LEVEL=1 VTO=-0.7 KP=50u LAMBDA=0.02)
-
-* Simulation commands
-.tran 0.1n 100n
-.plot TRAN V(in) V(out)
-.end
-```
+![spice deck](images/spice_deck.png)
