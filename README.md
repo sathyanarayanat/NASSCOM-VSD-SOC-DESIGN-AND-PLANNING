@@ -269,4 +269,4 @@ cp /Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A
 ```
 magic -T sky130A.tech sky130_inv.mag &
 ```
-![Layout of cmos inverter]()
+![Layout of cmos inverter](images/maggic_inv_1.png)
