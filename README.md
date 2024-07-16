@@ -291,7 +291,13 @@ vim sky130_inv.spice
 ```
 ![spice list 1](images/spicelist_1.png)
 
-we can certains parametrs and update the spice file as below
+we change certains parametrs and update the spice file as below
 
 ![spice list 2](images/spicelist__2.png)
+
+- The next step is to run the SPICE file using ngspice tool
+  ```
+  ngspice sky130_inv.spice
+  ```
+  
 
