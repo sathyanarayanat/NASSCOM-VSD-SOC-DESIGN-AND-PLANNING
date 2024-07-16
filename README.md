@@ -301,3 +301,18 @@ we change certains parametrs and update the spice file as below
   ```
   
 ![ngspice run](images/ngspice_run.png)
+
+**Characterization**
+
+- Rise Time
+   The time taken for the output waveform to transition from 20% to 80% of its maximum value. (x1-x0)
+     ![rise time](/images/rise_time.png)
+  
+     Rise time = 2.20409ns - 2.16829ns = **0.0358ns**
+- Fall time
+    The time taken for the output waveform to fall from 80% to 20% of its minimum value. (x1-x0)
+
+    ![fall time](/images/fall_time.png)
+
+  Fall time = 4.06644ns - 4.04003ns = **0.02641ns**
+
