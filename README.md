@@ -305,14 +305,24 @@ we change certains parametrs and update the spice file as below
 **Characterization**
 
 - Rise Time
-   The time taken for the output waveform to transition from 20% to 80% of its maximum value. (x1-x0)
+    The time taken for the output waveform to transition from 20% to 80% of its maximum value.
      ![rise time](/images/rise_time.png)
   
-     Rise time = 2.20409ns - 2.16829ns = **0.0358ns**
+    Rise time = 2.20409ns - 2.16829ns = **0.0358ns**
+  
 - Fall time
-    The time taken for the output waveform to fall from 80% to 20% of its minimum value. (x1-x0)
+    The time taken for the output waveform to fall from 80% to 20% of its maximum value.
+     ![fall time](/images/fall_time.png)
 
-    ![fall time](/images/fall_time.png)
+    Fall time = 4.06644ns - 4.04003ns = **0.02641ns**
 
-  Fall time = 4.06644ns - 4.04003ns = **0.02641ns**
+- Propagation Delay(cell rise)
+    The time taken for a 50% transition at the output (0 to 3.3V) corresponding to a 50% transition at the input.
+    ![Propagation Delay](/images/prg_delay.png)
 
+   Propagation Delay = 2.18659ns - 2.15ns = **0.03659ns**
+
+- Cell Fall delay
+  ![cell fall Delay](/images/cell_fall_delay.png)
+
+  Cell Fall delay = 4.05327ns - 4.05002ns = **0.00325ns**
