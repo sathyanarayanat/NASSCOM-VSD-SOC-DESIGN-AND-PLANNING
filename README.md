@@ -251,3 +251,22 @@ Below is an example of a CMOS invertr spice deck.
 
 ![spice deck](images/spice_deck.png)
 (Image courtesy [vlsisystemdesign](https://www.vlsisystemdesign.com))
+
+### Cloning vsdstdcelldesign repository
+
+```
+git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+```
+![cloning git repo](images/git_vsd.png)
+
+- The next step is to copy the sky130A.tech from magic tool folder to the newly clones directory.
+
+```
+cp /Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech /Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign/
+```
+- This cloned repository contains the stds for a CMOS inverter. We can view the layout using MAGIC tool.
+
+```
+magic -T sky130A.tech sky130_inv.mag &
+```
+![Layout of cmos inverter]()
