@@ -282,5 +282,6 @@ extract all
 ext2spice cthresh 0 rthresh 0
 ext2spice
 ```
-![spice file creation]()
+![tkcon commands](images/tkcon_cmnd.png)
+![spice file creation](images/spice_crt.png)
 
