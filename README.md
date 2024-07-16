@@ -289,4 +289,9 @@ opening the spice file
 ```
 vim sky130_inv.spice
 ```
-![spice list 1]()
+![spice list 1](images/spicelist_1.png)
+
+we can certains parametrs and update the spice file as below
+
+![spice list 2](images/spicelist__2.png)
+
