@@ -4,6 +4,7 @@
 - **Introduction**
 - **Day 1 - Synthesis of RTL**
 - **Day 2 - Good floorplan and vs Bad floorplan and Itroduction to library cells**
+- **Day 3 - Design library cell using Magic Layout and ngspice characterization**
 
 ## Introduction
 OpenLane is an open-source ASIC (Application-Specific Integrated Circuit) flow that facilitates the design and implementation of digital integrated circuits. It provides a complete RTL-to-GDSII (Register Transfer Level to Graphic Data System II) flow, leveraging various open-source EDA (Electronic Design Automation) tools. Developed by Efabless Corporation, OpenLane aims to lower the barrier to entry for ASIC design by providing accessible, high-quality tools and resources.
@@ -264,9 +265,22 @@ git clone https://github.com/nickson-jose/vsdstdcelldesign.git
 ```
 cp /Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech /Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign/
 ```
-- This cloned repository contains the stds for a CMOS inverter. We can view the layout using MAGIC tool.
+- This cloned repository contains the library files for a CMOS inverter. We can view the layout using MAGIC tool.
 
 ```
 magic -T sky130A.tech sky130_inv.mag &
 ```
 ![Layout of cmos inverter](images/magic_inv_1.png)
+
+### Extracting SPICE list
+
+The next step is to extract the SPICE list of the inverter. By extracting a SPICE netlist from the layout and performing post-layout simulations, designers can ensure that the physical implementation of the circuit meets the required specifications and functions correctly in the real world.
+
+- Use the below commands to extract the spice list.(In tkcon tab)
+```
+extract all
+ext2spice cthresh 0 rthresh 0
+ext2spice
+```
+![spice file creation]()
+
