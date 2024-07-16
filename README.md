@@ -285,3 +285,8 @@ ext2spice
 ![tkcon commands](images/tkcon_cmnd.png)
 ![spice file creation](images/spice_crt.png)
 
+opening the spice file
+```
+vim sky130_inv.spice
+```
+![spice list 1]()
