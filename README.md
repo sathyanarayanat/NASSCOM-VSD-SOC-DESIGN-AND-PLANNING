@@ -423,7 +423,7 @@ load poly
   ```
   drc why
   ```
-    ![poly 3](images/poly_3.png)
+  ![poly 3](images/poly_3.png)
 
   
   
