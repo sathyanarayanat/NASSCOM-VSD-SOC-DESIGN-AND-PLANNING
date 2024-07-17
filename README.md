@@ -364,3 +364,68 @@ We download the necessary files for the lab.
 ```
 wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
 ```
+We next load one of the magic files from the lab folder to check for DRC violation
+
+Type the below command in terminal from the lab folder
+```
+magic -d XR met3.mag
+```
+To check for DRC violation , use the below command in the tkcon window.
+
+```
+drc why
+```
+
+![DRC metal](images/met3.png)
+
+#### DRC error fixation
+
+- open the ploy.mag file. use the below command in tkcon window
+
+```
+load poly
+```
+![poly 1](images/poly_1.png)
+
+- Zoom into the poly.9 region and check for DRC error.
+
+![poly 2](images/poly_2.png)
+
+- To mitigate the DRC errors, we change certain definitions in the tech file.
+
+  Open the sky130A.tech file and nagivate to loaction with poly.9
+
+  ```
+  vim sky130A.tech
+
+  ```
+  
+  To search for poly.9 , follow below command
+
+  ```
+  Press ESC to enter command mode in vim
+  Then type - :/poly.9
+  press enter
+  
+  ```
+
+  Now, we chnage the tech file as below
+
+  ![DRC rule change](images/drc_rule_ch_1.png)
+
+  ![DRC rule change](images/drc_rule_ch_2.png)
+
+  - To load the changed tech file into magic, use the below commans in tkcon window.
+
+  ```
+  tech load sky130A.tech
+
+  ```
+  ```
+  drc why
+
+  ```
+    ![poly 3](images/poly_3.png)
+
+  
+  
