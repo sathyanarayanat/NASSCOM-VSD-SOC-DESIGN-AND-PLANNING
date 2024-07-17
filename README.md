@@ -385,11 +385,11 @@ drc why
 ```
 load poly
 ```
-![poly 1](images/poly_1.png)
+![poly 1](images/ploy_1.png)
 
 - Zoom into the poly.9 region and check for DRC error.
 
-![poly 2](images/poly_2.png)
+![poly 2](images/ploy_2.png)
 
 - To mitigate the DRC errors, we change certain definitions in the tech file.
 
@@ -397,7 +397,6 @@ load poly
 
   ```
   vim sky130A.tech
-
   ```
   
   To search for poly.9 , follow below command
@@ -405,8 +404,7 @@ load poly
   ```
   Press ESC to enter command mode in vim
   Then type - :/poly.9
-  press enter
-  
+  press enter  
   ```
 
   Now, we chnage the tech file as below
@@ -419,11 +417,9 @@ load poly
 
   ```
   tech load sky130A.tech
-
   ```
   ```
   drc why
-
   ```
     ![poly 3](images/poly_3.png)
 
