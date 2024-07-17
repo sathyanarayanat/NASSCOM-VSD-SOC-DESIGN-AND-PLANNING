@@ -425,5 +425,10 @@ load poly
   ```
   ![poly 3](images/poly_3.png)
 
+  #### Nwell error check.
+
+ ![Nwell drc](images/drc_nwell_1.png)
+
+ ![Nwell drc](images/drc_nwell_2.png)
   
   
