@@ -168,7 +168,7 @@ Flop ratio = number of d-flipflops / Total number of cells = 1613/14876 = 0.1084
 ### Running floorplan
 
 ```
-run_synthesis
+run_floorplan
 ```
 
 ![run_floorplan](images/run_floorplan_1.png)
@@ -203,6 +203,10 @@ run_synthesis
   (Image courtesy: [vlsisystemdesign](https://www.vlsisystemdesign.com/)) 
    
 ### Run placement
+
+```
+run_placement
+```
 
 ![run_placement](images/run_placement.png)
 
