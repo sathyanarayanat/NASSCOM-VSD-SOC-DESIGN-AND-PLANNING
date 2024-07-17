@@ -48,12 +48,6 @@ Function: Layout Editor
 
 Description: An interactive layout tool used for designing and viewing chip layouts.
 
-- *KLayout:*
-
-Function: Layout Viewer and Editor
-
-Description: Another layout tool, often used for viewing and editing GDSII files.
-
 - *Netgen:*
 
 Function: LVS (Layout vs. Schematic)
@@ -75,31 +69,31 @@ Description: Used for formal verification of designs.
 ### The OpenLane Flow
 The typical flow in OpenLane consists of several stages, each corresponding to a specific phase in the ASIC design process:
 
-- *Synthesis:*
+- **Synthesis:**
 
 Convert RTL designs into gate-level netlists using Yosys.
 
-- *Floorplanning:*
+- **Floorplanning:**
 
 Define the placement of different blocks and establish the power grid.
 
-- *Placement:*
+- **Placement:**
 
 Place the standard cells in the predefined floorplan using OpenROAD.
 
-- *Clock Tree Synthesis (CTS):*
+- **Clock Tree Synthesis (CTS):**
 
 Design and insert the clock tree to ensure clock signals are distributed efficiently.
 
-- *Routing:*
+- **Routing:**
 
 Route the interconnections between cells and blocks using OpenROAD.
 
-- *Signoff:*
+- **Signoff:**
 
 Perform final checks and verifications, including DRC (Design Rule Check) and LVS.
 
-- *GDSII Generation:*
+- **GDSII Generation:**
 
 Generate the final GDSII file, which is used for manufacturing the chip.
 
@@ -336,17 +330,9 @@ we change certains parametrs and update the spice file as below
   
 ### Lab introduction to MAGIC tool options and DRC rules.
 
-Magic is a widely-used open-source layout editor. Magic is primarily used for creating and editing VLSI circuit layouts, and it provides various features that make it easier for designers to visualize and manipulate the physical design of integrated circuits. Here are some key features of Magic:
+#### Magic tool
 
-**Graphical Layout Editor**: Magic offers a user-friendly graphical interface for designing and editing the physical layout of integrated circuits. It supports various layers and design rules.
-
-**Design Rule Checking (DRC)*: Magic includes tools for checking the layout against a set of design rules to ensure that the design meets the required manufacturing specifications.
-
-**Interactive Design**: The tool allows interactive editing and immediate feedback, making it easier to iterate on the design.
-
-**Technology Files**: Magic uses technology files that define the process-specific parameters and design rules for different fabrication technologies.
-
-**Integration with Other Tools**: Magic can work in conjunction with other EDA (Electronic Design Automation) tools, facilitating a smooth workflow for VLSI design.
+Magic is a widely-used open-source layout editor. Magic is primarily used for creating and editing VLSI circuit layouts, and it provides various features that make it easier for designers to visualize and manipulate the physical design of integrated circuits. 
 
 You can find the documentation here. [magic](http://opencircuitdesign.com/magic)
 
