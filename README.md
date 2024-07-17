@@ -407,11 +407,11 @@ load poly
   press enter  
   ```
 
-  Now, we chnage the tech file as below
+  Now, we change the tech file as below
 
-  ![DRC rule change](images/drc_rule_ch_1.png)
+![DRC rule change](images/drc_rule_ch_1.png)
 
-  ![DRC rule change](images/drc_rule_ch_2.png)
+![DRC rule change](images/drc_rule_ch_2.png)
   
 
 - To load the changed tech file into magic, use the below commans in tkcon window.
