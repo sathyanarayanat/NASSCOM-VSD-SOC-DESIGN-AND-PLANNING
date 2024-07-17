@@ -106,12 +106,22 @@ Below is the representation of the RTL to GDSII flow
 Aim: we are going to calculate the Flop ratio after the systhesis of RTL of Picorv32a.
 
 ### Step 1 - Setting up openlane environment
+
+```
+package require openlane 0.9
+prep -design picorv32a
+```
 ![OpenLane setup](images/openlane_setup.png)
 
 ### Step 2 - Run Synthesis of the RTL
+
+```
+run_synthesis
+```
 ![Run synthesis](images/run_synthesis.png)
 
 ### Step 3 - Calculate the flop ratio
+
 ![Usage report](images/usage_report.png)
 
 Flop ratio = number of d-flipflops / Total number of cells = 1613/14876 = 0.10842969 .
@@ -156,6 +166,10 @@ Flop ratio = number of d-flipflops / Total number of cells = 1613/14876 = 0.1084
    we make sure to block the pin placement region as to avoid the automated place and route from accessing this region. This is called Logical cells placement blockage.
 
 ### Running floorplan
+
+```
+run_synthesis
+```
 
 ![run_floorplan](images/run_floorplan_1.png)
 
