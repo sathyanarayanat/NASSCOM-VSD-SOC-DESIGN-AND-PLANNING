@@ -412,8 +412,10 @@ load poly
   ![DRC rule change](images/drc_rule_ch_1.png)
 
   ![DRC rule change](images/drc_rule_ch_2.png)
+  
 
-  - To load the changed tech file into magic, use the below commans in tkcon window.
+- To load the changed tech file into magic, use the below commans in tkcon window.
+  
 
   ```
   tech load sky130A.tech
