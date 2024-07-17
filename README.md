@@ -333,3 +333,30 @@ we change certains parametrs and update the spice file as below
   ![cell fall Delay](/images/cell_fall_delay.png)
 
   Cell Fall delay = 4.05327ns - 4.05002ns = **0.00325ns**
+  
+### Lab introduction to MAGIC tool options and DRC rules.
+
+Magic is a widely-used open-source layout editor. Magic is primarily used for creating and editing VLSI circuit layouts, and it provides various features that make it easier for designers to visualize and manipulate the physical design of integrated circuits. Here are some key features of Magic:
+
+**Graphical Layout Editor**: Magic offers a user-friendly graphical interface for designing and editing the physical layout of integrated circuits. It supports various layers and design rules.
+
+**Design Rule Checking (DRC)*: Magic includes tools for checking the layout against a set of design rules to ensure that the design meets the required manufacturing specifications.
+
+**Interactive Design**: The tool allows interactive editing and immediate feedback, making it easier to iterate on the design.
+
+**Technology Files**: Magic uses technology files that define the process-specific parameters and design rules for different fabrication technologies.
+
+**Integration with Other Tools**: Magic can work in conjunction with other EDA (Electronic Design Automation) tools, facilitating a smooth workflow for VLSI design.
+
+You can find the documentation here. [magic](http://opencircuitdesign.com/magic)
+
+#### SKY130 PDK
+
+The SkyWater SKY130 process design kit (PDK) is an open-source PDK for the 130nm process technology node from SkyWater Technology. It provides the necessary resources, tools, and files required to design integrated circuits using the SKY130 process
+
+You can find the documentation Here. [sky130 pdk](https://skywater-pdk.readthedocs.io/en/main/) 
+
+We download the necessary files for the lab.
+```
+wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+```
