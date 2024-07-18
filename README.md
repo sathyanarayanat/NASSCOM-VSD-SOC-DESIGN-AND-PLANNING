@@ -432,6 +432,20 @@ load poly
 
  ![Nwell drc](images/drc_nwell_2.png)
 
+ we change cif parameters in the tech file 
+
+![Nwell drc cif](images/cif_ch_1.png) 
+
+![Nwell drc cif](images/cif_ch_1.png) 
+
+we save the changes and load the tech file again
+
+![drc cif](images/cif_mag_1.png) 
+
+When contact is placed, we dont get the DRC error
+
+![drc cif](images/cif_mag_1.png) 
+
 
 ## Day 4 - Pre-layout timing analysis and importance of good clock tree
 
