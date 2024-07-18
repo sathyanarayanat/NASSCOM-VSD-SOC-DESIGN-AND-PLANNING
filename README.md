@@ -463,7 +463,13 @@ We can see that lef file is created. use ```less``` command to see the contents.
 
 ![lef file](images/lef_file.png)
 
-![lef file](images/lef_img.png)
+![lef file](images/lef_out.png)
+
+Next step is to insert the inverter into the picorv32 design. For this, we first copy the created lef file of the inverter to src folder of picorv32.
+
+```
+cp sky130_vsdinv.lef ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src
+```
 
 
 
