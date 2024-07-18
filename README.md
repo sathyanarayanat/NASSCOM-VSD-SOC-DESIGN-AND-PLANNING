@@ -444,7 +444,7 @@ we save the changes and load the tech file again
 
 When contact is placed, we dont get the DRC error
 
-![drc cif](images/cif_mag_1.png) 
+![drc cif](images/cif_mag_2.png) 
 
 
 ## Day 4 - Pre-layout timing analysis and importance of good clock tree
