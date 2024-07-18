@@ -479,13 +479,37 @@ We can see that lef file is created. use ```less``` command to see the contents.
 
 ![lef file](images/lef_out.png)
 
-Next step is to insert the inverter into the picorv32 design. For this, we first copy the created lef file of the inverter to src folder of picorv32.
+#### Next step is to insert the inverter into the picorv32 design. 
 
+For this, we first copy the created lef file of the inverter to src folder of picorv32.
 ```
 cp sky130_vsdinv.lef ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src
 ```
+![lef file copied](images/lef_cp.png)
 
+Copy lef files ```sky130_fd_sc_hd_typical.lib```, ```sky130_fd_sc_hd_slow.lib``` & ```sky130_fd_sc_hd_fast.lib``` to src folder.
 
+Now, we edit the config.tcl file of the picorv32a as below.
 
+![lef file copied](images/pico_config_ch.png)
+
+Next step is to run sysnthesis using openlane. Before that we have to give certain commans so that the custom lef file is used in sysnthesis
+
+- After ```prer -design picorv32a```, give the below commands into the openlane window.
+
+```
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+```
+
+- Running synthesis
+  
+  ```
+  run_synthesis
+  ```
+ ![synthesis with custom inv](images/d4_run_syn.png)
+ 
+ ![synthesis with custom inv](images/d4_run_syn_2.png)
+  
 
 
