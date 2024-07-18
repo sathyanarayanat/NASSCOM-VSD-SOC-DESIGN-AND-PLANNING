@@ -434,3 +434,38 @@ load poly
 
 
 ## Day 4 - Pre-layout timing analysis and importance of good clock tree
+
+#### LEF (Library Exchange Format)
+
+**Standard Cell Definitions:** LEF files describe the physical dimensions and characteristics of standard cells used in the design. This includes information about cell height, width, and pin locations.
+
+**Routing and Placement:** They provide detailed information required for placing cells and routing interconnections. This includes routing grid definitions, layer definitions, and spacing rules.
+
+**Technology Information:** LEF files contain data on the technology process used for fabrication, such as layer definitions, via definitions, and design rules.
+
+**Macro Definitions:** LEF files describe the layout of larger macros, which can include complex functional blocks like memories or custom-designed circuits.
+
+The information in LEF files helps EDA (Electronic Design Automation) tools perform tasks like floorplanning, placement, routing, and physical verification efficiently and accurately.
+
+#### Creating port definition
+
+For the layouts done in magic tool, we have define ports for inputs,outputs, and power supply. You can find how to do port definition [here](https://github.com/nickson-jose/vsdstdcelldesign.git)
+
+#### Creating LEF file from MAGIC tool
+
+To obtain the LEF file of your layout design, open the tkcon window and typw the below command.
+
+```
+lef write
+```
+
+We can see that lef file is created. use ```less``` command to see the contents.
+
+![lef file](images/lef_file.png)
+
+![lef file](images/lef_img.png)
+
+
+
+
+
