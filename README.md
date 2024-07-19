@@ -559,9 +559,57 @@ magic -T ~/Desktop/sky130A.tech lef read tmp/merged.nom.lef def read results/flo
 
 ![d4 placemnt](images/d4_magic_place.png)
 
-#### 
+The next step is to create pre_sta.conf and my_base.sdc files.
 
+The pre_sta.conf should be placed in ``` ~/Desktop/work/tool/openlane_working_dir/openlane```
 
+The contents of pre_sta.conf is shown below.
+
+![pre sta conf](images/d4_pre_sta.png)
+
+The my_base.sdc should be placed in ``` ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src```
+
+The contents of my_base.sdc is show below
+
+![pre sta conf](images/d4_my_base.png)
+
+We perform sta using the pre_sta.conf file. Nagive to the openlane directory where this file is placed. Give the below command tomperform sta
+
+```
+sta pre_sta.conf
+```
+
+If you encounter negative slew, it has to be rectified. you can follow the below steps.
+
+- Reduce the fanout
+
+   In the openlane window, run ``` set ::env(SYNTH_MAX_FANOUT) 3 ``` and run synthesis. Run sta and check the slew.
+
+- Changing the elements size.
+
+   SLEW can be reduced by sacrificing area . To accomplish this follow the bellow steps.
+
+  ![sta fix](images/slew_ch_1.png)
+
+  Here , change the mux2_1 to mux2_2. give the following commands in sta window
+
+  ```
+  replace_cell _00357_ sky130_fd_sc_hd__mux2_2
+  ```
+
+  ```
+  report_checks -field {net cap slew input_pins} -digits 4
+  ```
+  
+  ![sta fix](images/slew_ch_2.png)
+
+Similarlly change other elements to reduce slew
+
+![sta fix](images/slew_ch_3.png)
+
+![sta fix](images/slew_ch_4.png)
+
+### CLOCK TREE SYNTHESIS
 
 
 
