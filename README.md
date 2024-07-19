@@ -491,7 +491,7 @@ Copy lef files ```sky130_fd_sc_hd_typical.lib```, ```sky130_fd_sc_hd_slow.lib```
 
 Now, we edit the config.tcl file of the picorv32a as below.
 
-![lef file copied](images/pico_config_ch.png)
+![lef file copied](images/d4_config.png)
 
 Next step is to run sysnthesis using openlane. Before that we have to give certain commans so that the custom lef file is used in sysnthesis
 
@@ -509,7 +509,7 @@ add_lefs -src $lefs
   ```
  ![synthesis with custom inv](images/d4_run_syn.png)
  
- ![synthesis with custom inv](images/d4_run_syn_2.png)
+ ![synthesis with custom inv](images/d4_syn.png)
   
 #### Delay tables.
 
