@@ -605,9 +605,9 @@ If you encounter negative slew, it has to be rectified. you can follow the below
 
 Similarlly change other elements to reduce slew
 
-![sta fix](images/slew_ch_3.png)
+  ![sta fix](images/slew_ch_3.png)
 
-![sta fix](images/slew_ch_4.png)
+  ![sta fix](images/slew_ch_4.png)
 
 ### CLOCK TREE SYNTHESIS
 
