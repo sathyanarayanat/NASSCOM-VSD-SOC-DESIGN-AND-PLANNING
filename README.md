@@ -567,7 +567,7 @@ The contents of pre_sta.conf is shown below.
 
 ![pre sta conf](images/d4_pre_sta.png)
 
-The my_base.sdc should be placed in ``` ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src```
+The my_base.sdc should be placed in  ``` ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src```
 
 The contents of my_base.sdc is show below
 
