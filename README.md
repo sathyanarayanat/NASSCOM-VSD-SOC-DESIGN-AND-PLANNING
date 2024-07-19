@@ -511,5 +511,27 @@ add_lefs -src $lefs
  
  ![synthesis with custom inv](images/d4_run_syn_2.png)
   
+#### Delay tables.
+
+Delay table is a data structure used to model the timing characteristics of digital circuits. It provides information on how long signals take to propagate through various components of the circuit, such as gates, interconnects, and other elements. Delay tables are essential for accurate timing analysis, optimization, and verification during the design process. Here are the key aspects of delay tables:
+
+**Gate Delays:** Delay tables include the propagation delays of logic gates (e.g., AND, OR, NOT gates). These delays depend on various factors like the input signal transition time, output load capacitance, and supply voltage.
+
+**Interconnect Delays:** They provide delays associated with the interconnections (wires) between different components. These delays are influenced by the length, width, and parasitic capacitance and resistance of the interconnects.
+
+**Lookup Tables:** Delay tables are often implemented as lookup tables, where delay values are stored for different combinations of input conditions (e.g., input transition time, output load). The EDA tools use these tables to estimate the delay for a specific condition.
+
+**Timing Analysis:** During static timing analysis (STA), the delay tables are used to calculate the total delay from the input to the output of a circuit. This helps in identifying critical paths, timing violations, and optimizing the design to meet timing constraints.
+
+**Library Files:** Delay tables are typically part of standard cell library files, such as Liberty (.lib) files, which contain detailed timing, power, and functional information about the cells used in the design.
+
+Accurate delay modeling using delay tables is crucial for ensuring that the final VLSI design meets the required performance specifications and operates correctly under various conditions.
+
+
+
+
+
+
+
 
 
