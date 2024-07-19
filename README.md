@@ -528,8 +528,38 @@ Delay table is a data structure used to model the timing characteristics of digi
 Accurate delay modeling using delay tables is crucial for ensuring that the final VLSI design meets the required performance specifications and operates correctly under various conditions.
 
 
+To eliminate the slack, we chnage certain parameters and run suntheis again
 
+```
+set ::env(SYNTH_STRATEGY) 1
+```
 
+```
+set ::env(SYNTH_SIZING) 1
+```
+
+After synthesis, run floorplan and placement.
+
+```
+init_floorplan
+place_io
+tap_decap_or
+```
+
+```
+run_placement
+```
+![d4 placement](images/d4_placement.png)
+
+Open the layout using MAGIC tool to see is our inverter is inserted into the picorv32 design
+
+```
+magic -T ~/Desktop/sky130A.tech lef read tmp/merged.nom.lef def read results/floorplan/picorv32a.def &
+```
+
+![d4 placemnt](images/d4_magic_place.png)
+
+#### 
 
 
 
