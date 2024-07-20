@@ -656,5 +656,9 @@ write_db pico_cts.db
 
 Next, we read the db and give the file locations. 
 
-![read db](images/d4_read_db.png)
+![read db](images/d4_db_read.png)
+
+Ensure you get positive or zero slack
+
+![slack db](images/d4_db_slack.png)
 
