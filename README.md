@@ -632,4 +632,29 @@ run_cts
 
 ![cts](images/run_cts.png)
 
+After cts, we invoke the OpenRoad. OpenSTA is integrated inside openroad, hence we perform sta inside openroad. Another advantage is we can utilize the environment variables directly fron the openlane flow.
+
+```
+openroad
+```
+
+Inside openroad, timing analysis is done with DB file. To create a DB , follow the below steps.
+
+```
+read_lef /openLANE_flow/designs/picorv32a/runs/20-07_10-56/tmp/merged.lef
+```
+
+```
+read_def /openLANE_flow/designs/picorv32a/runs/20-07_10-56/results/cts/picorv32a.cts.def
+```
+
+```
+write_db pico_cts.db
+```
+
+![db created](images/d4_db_crt.png)
+
+Next, we read the db and give the file locations. 
+
+![read db](images/d4_read_db.png)
 
