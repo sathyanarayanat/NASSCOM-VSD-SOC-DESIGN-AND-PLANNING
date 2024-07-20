@@ -609,7 +609,27 @@ Similarlly change other elements to reduce slew
 
   ![sta fix](images/slew_ch_4.png)
 
+  Make sure that slew is below 1.
+
+  ![sta fix](images/d4_slew_ch_5.png)
+
+To save changes, we have to update the synthesis file. 
+ ```
+  write_verilog ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/20-07_10-56/results/synthesis/picorv32a.synthesis.v
+ ```
+
+Run floorplan and placement after this step
+
 ### CLOCK TREE SYNTHESIS
 
+Clock Tree Synthesis (CTS) is a critical step in the physical design phase of VLSI design, aiming to distribute the clock signal from a single source (clock input) to all sequential elements (like flip-flops and registers) across the chip with minimal skew and balanced delay. The primary goal of CTS is to ensure that the clock signal reaches all parts of the circuit simultaneously, reducing timing issues and ensuring synchronous operation of the digital circuit. During CTS, a hierarchical structure of buffers and inverters is inserted to create the clock tree, optimizing it to meet the design's timing, power, and area constraints. Effective CTS is essential for achieving robust timing performance and reliability in high-speed and complex integrated circuits.
+
+To perform cts, to the openlane window and giv the below command
+
+```
+run_cts
+```
+
+![cts](images/d4_cts.png)
 
 
