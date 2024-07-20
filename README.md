@@ -630,6 +630,6 @@ To perform cts, to the openlane window and giv the below command
 run_cts
 ```
 
-![cts](images/d4_cts.png)
+![cts](images/run_cts.png)
 
 
