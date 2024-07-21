@@ -689,3 +689,38 @@ gen_pdn
 ```
 
 ![pdn genration](images/d5_pdn.png)
+
+Next step is to perform routing using TritonRoute.
+
+```
+run_routing
+```
+We get congestion error while routing.
+
+![routing error](images/d5_rt_error_1.png)
+
+The error log is show below.
+
+![routing error](images/d5_error_log.png)
+
+We can resolve the error by making chnages in the environment variable. One such varibale is ```FP_core_util```. We reduce the core utilization from the default value of 50 percent to 30 percent.
+
+```
+set ::env(FP_CORE_UTIL) 30
+```
+
+Since we changed one of the floorplan environment variables, we will run the flow from floorplan again. We achive successfull routing after this process
+
+![routing](images/d5_rt_end.png)
+
+To view the design after routing, open the design using magic layout.
+
+```
+magic -T /home/vsdflow/open_working_dir/OpenLane/vsdstdcelldesign/libs/sky130A.tech lef read tmp/merged.nom.lef def read results/routing/picorv32a.def &
+```
+
+![layout after routing](images/d5_rt_ly_1.png)
+
+
+![layout after routing](images/d5_rt_ly_2.png)
+
