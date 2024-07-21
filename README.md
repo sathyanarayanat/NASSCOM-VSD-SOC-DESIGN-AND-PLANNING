@@ -731,12 +731,13 @@ This concludes the PnR flow.
 
 ## Word of appretiation 
 
-  I would like to thank [Kunal Ghosh](https://github.com/kunalg123) and ![vlsisystemdsign](https://www.vlsisystemdesign.com) for providing with this learning experience and insight into VLSI physical desgin.
+  I would like to thank [Kunal Ghosh](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/) and ![vlsisystemdsign](https://www.vlsisystemdesign.com) for providing with this learning experience and insight into VLSI physical desgin.
 
 ## References
 
 - [Openlane](https://github.com/The-OpenROAD-Project/OpenLane)
 - [Google-Skywater-PDK](https://github.com/google/skywater-pdk)
+- https://github.com/kunalg123
 - https://github.com/nickson-jose/vsdstdcelldesign
 - https://github.com/AnupriyaKrishnamoorthy/NASSCOM-PD-ANU
   
