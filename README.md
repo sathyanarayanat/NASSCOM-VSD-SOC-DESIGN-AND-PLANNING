@@ -6,6 +6,7 @@
 - **Day 2 - Good floorplan and vs Bad floorplan and Itroduction to library cells**
 - **Day 3 - Design library cell using Magic Layout and ngspice characterization**
 - **Day 4 - Pre-layout timing analysis and importance of good clock tree**
+- [**Day 5 - Final steps for RTL2GDS using tritonRoute and openSTA**](#Day-5---Final-steps-for-RTL2GDS-using-tritonRoute-and-openSTA)
 
 ## Introduction
 OpenLane is an open-source ASIC (Application-Specific Integrated Circuit) flow that facilitates the design and implementation of digital integrated circuits. It provides a complete RTL-to-GDSII (Register Transfer Level to Graphic Data System II) flow, leveraging various open-source EDA (Electronic Design Automation) tools. Developed by Efabless Corporation, OpenLane aims to lower the barrier to entry for ASIC design by providing accessible, high-quality tools and resources.
@@ -724,11 +725,17 @@ magic -T /home/vsdflow/open_working_dir/OpenLane/vsdstdcelldesign/libs/sky130A.t
 
 ![layout after routing](images/d5_rt_ly_2.png)
 
+This concludes the PnR flow.
+
+# Word of appretiation 
+
+  I would like to thank ![Kunal gosh](linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836) for this upskilling workshop.
+
 # References
 - ![vlsisystemdesign](https://www.vlsisystemdesign.com)
 - ![Openlane](https://github.com/The-OpenROAD-Project/OpenLane)
 - ![Google-Skywater-PDK](https://github.com/google/skywater-pdk)
 - https://github.com/kunalg123
-- [](https://github.com/nickson-jose/vsdstdcelldesign)
-- [](https://github.com/AnupriyaKrishnamoorthy/NASSCOM-PD-ANU)
+- https://github.com/nickson-jose/vsdstdcelldesign
+- https://github.com/AnupriyaKrishnamoorthy/NASSCOM-PD-ANU
   
