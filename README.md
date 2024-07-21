@@ -1,13 +1,15 @@
 # NASSCOM-VSD-SOC-DESIGN-AND-PLANNING
 
-# Table of Contents
+# **Table of Contents**
+
 - [**Introduction**](#Introduction)
 - [**Day 1 - Synthesis of RTL**](#Day-1---Synthesis-of-RTL)
 - [**Day 2 - Good floorplan and vs Bad floorplan and Itroduction to library cells**](#Day-2---Good-floorplan-and-vs-Bad-floorplan-and-Itroduction-to-library-cells)
 - [**Day 3 - Design library cell using Magic Layout and ngspice characterization**](#Day-3---Design-library-cell-using-Magic-Layout-and-ngspice-characterization)
 - [**Day 4 - Pre-layout timing analysis and importance of good clock tree**](#Day-4---Pre-layout-timing-analysis-and-importance-of-good-clock-tree)
 - [**Day 5 - Final steps for RTL2GDS using tritonRoute and openSTA**](#Day-5---Final-steps-for-RTL2GDS-using-tritonRoute-and-openSTA)
-
+- [**References**](#References)
+- 
 ## Introduction
 OpenLane is an open-source ASIC (Application-Specific Integrated Circuit) flow that facilitates the design and implementation of digital integrated circuits. It provides a complete RTL-to-GDSII (Register Transfer Level to Graphic Data System II) flow, leveraging various open-source EDA (Electronic Design Automation) tools. Developed by Efabless Corporation, OpenLane aims to lower the barrier to entry for ASIC design by providing accessible, high-quality tools and resources.
 
