@@ -703,7 +703,7 @@ The error log is show below.
 
 ![routing error](images/d5_error_log.png)
 
-We can resolve the error by making chnages in the environment variable. One such varibale is ```FP_core_util```. We reduce the core utilization from the default value of 50 percent to 30 percent.
+We can resolve the error by making changes in certain environment variables. One such varibale is ```FP_CORE_UTIL```. We reduce the core utilization from the default value of 50 percent to 30 percent.
 
 ```
 set ::env(FP_CORE_UTIL) 30
