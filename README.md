@@ -731,7 +731,7 @@ This concludes the PnR flow.
 
 ## Word of appretiation 
 
-  I would like to thank [Kunal Ghosh](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/) and ![vlsisystemdsign](https://www.vlsisystemdesign.com) for providing with this learning experience and insight into VLSI physical desgin.
+  I would like to thank [Kunal Ghosh](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/) and [vlsisystemdesign](https://www.vlsisystemdesign.com) for providing with this learning experience and insight into VLSI physical desgin.
 
 ## References
 
