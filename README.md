@@ -731,7 +731,7 @@ This concludes the PnR flow.
 
 # Word of appretiation 
 
-  I would like to thank ![Kunal gosh](linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836) for this upskilling workshop.
+  I would like to thank ![Kunal gosh](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BNw1G8nK%2FT6%2BzlFRNRo8tfA%3D%3D) for this upskilling workshop.
 
 # References
 - ![vlsisystemdesign](https://www.vlsisystemdesign.com)
