@@ -2,10 +2,10 @@
 
 # Table of Contents
 - **Introduction**
-- **Day 1 - Synthesis of RTL**
-- **Day 2 - Good floorplan and vs Bad floorplan and Itroduction to library cells**
-- **Day 3 - Design library cell using Magic Layout and ngspice characterization**
-- **Day 4 - Pre-layout timing analysis and importance of good clock tree**
+- [**Day 1 - Synthesis of RTL**](#**Day-1---Synthesis-of-RTL**)
+- [**Day 2 - Good floorplan and vs Bad floorplan and Itroduction to library cells**](#Day-2---Good-floorplan-and-vs-Bad-floorplan-and-Itroduction-to-library-cells)
+- [**Day 3 - Design library cell using Magic Layout and ngspice characterization**](#Day-3---Design-library-cell-using-Magic-Layout-and-ngspice-characterization)
+- [**Day 4 - Pre-layout timing analysis and importance of good clock tree**](#Day-4---Pre-layout-timing-analysis-and-importance-of-good-clock-tree)
 - [**Day 5 - Final steps for RTL2GDS using tritonRoute and openSTA**](#Day-5---Final-steps-for-RTL2GDS-using-tritonRoute-and-openSTA)
 
 ## Introduction
