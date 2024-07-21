@@ -682,3 +682,10 @@ Lee's algorithm is a classic method used for maze routing, a sub-problem of rout
   Design Rule Checking (DRC) is an essential verification step in the VLSI design process that ensures a chip layout adheres to the fabrication constraints set by the semiconductor foundry. These rules cover various aspects, such as minimum width and spacing of metal and polysilicon layers, to prevent issues like shorts and opens during manufacturing. DRC involves running automated checks to validate that all geometric and connectivity aspects of the design meet these stringent rules. By catching potential violations early, DRC helps in avoiding costly manufacturing defects and ensures the reliability and performance of the final integrated circuit. This process is critical for maintaining high yield rates in production and ensuring that the chip functions correctly in its intended application.
 
   
+After the cts , we have to create the power distribution network (pdn).
+
+```
+gen_pdn
+```
+
+![pdn genration](images/d5_pdn.png)
