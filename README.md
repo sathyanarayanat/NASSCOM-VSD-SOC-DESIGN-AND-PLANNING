@@ -662,3 +662,23 @@ Ensure you get positive or zero slack
 
 ![slack db](images/d4_db_slack.png)
 
+## Day 5 - Final steps for RTL2GDS using tritonRoute and openSTA
+
+#### **Routing**
+
+  Routing refers to the process of creating electrical connections between various components, such as transistors, gates, and blocks, on an integrated circuit (IC).. Routing aims to connect all the required nets (wires connecting two or more components) while adhering to design rules, minimizing delays, and optimizing for power and area.
+
+#### **Lee's Algorithm**
+
+Lee's algorithm is a classic method used for maze routing, a sub-problem of routing in VLSI design. It is a breadth-first search (BFS) algorithm that finds the shortest path between two points in a grid. Here’s how it works:
+
+- Initialization: The algorithm starts by marking the source point on the grid and initializing a queue with the source point.
+- Wave Propagation: It then propagates a "wave" from the source point, exploring all neighboring grid cells and marking them with increasing distance values. Each cell is checked in the order they are added to the queue, ensuring a breadth-first exploration.
+- Reaching the Target: The wave continues to propagate until it reaches the target point. At this stage, the algorithm has found the shortest path to the target.
+- Path Backtracking: Once the target is reached, the algorithm backtracks from the target to the source, following the decreasing distance values to construct the shortest path.
+
+#### Design Rule Check (DRC)
+
+  Design Rule Checking (DRC) is an essential verification step in the VLSI design process that ensures a chip layout adheres to the fabrication constraints set by the semiconductor foundry. These rules cover various aspects, such as minimum width and spacing of metal and polysilicon layers, to prevent issues like shorts and opens during manufacturing. DRC involves running automated checks to validate that all geometric and connectivity aspects of the design meet these stringent rules. By catching potential violations early, DRC helps in avoiding costly manufacturing defects and ensures the reliability and performance of the final integrated circuit. This process is critical for maintaining high yield rates in production and ensuring that the chip functions correctly in its intended application.
+
+  
