@@ -724,3 +724,11 @@ magic -T /home/vsdflow/open_working_dir/OpenLane/vsdstdcelldesign/libs/sky130A.t
 
 ![layout after routing](images/d5_rt_ly_2.png)
 
+# References
+- ![vlsisystemdesign](https://www.vlsisystemdesign.com)
+- ![Openlane](https://github.com/The-OpenROAD-Project/OpenLane)
+- ![Skywater](https://www.skywatertechnology.com/)
+- [](https://github.com/kunalg123)
+- [](https://github.com/nickson-jose/vsdstdcelldesign)
+- [](https://github.com/AnupriyaKrishnamoorthy/NASSCOM-PD-ANU)
+  
