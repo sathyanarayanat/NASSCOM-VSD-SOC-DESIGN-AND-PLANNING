@@ -9,7 +9,7 @@
 - [**Day 4 - Pre-layout timing analysis and importance of good clock tree**](#Day-4---Pre-layout-timing-analysis-and-importance-of-good-clock-tree)
 - [**Day 5 - Final steps for RTL2GDS using tritonRoute and openSTA**](#Day-5---Final-steps-for-RTL2GDS-using-tritonRoute-and-openSTA)
 - [**References**](#References)
-- 
+
 ## Introduction
 OpenLane is an open-source ASIC (Application-Specific Integrated Circuit) flow that facilitates the design and implementation of digital integrated circuits. It provides a complete RTL-to-GDSII (Register Transfer Level to Graphic Data System II) flow, leveraging various open-source EDA (Electronic Design Automation) tools. Developed by Efabless Corporation, OpenLane aims to lower the barrier to entry for ASIC design by providing accessible, high-quality tools and resources.
 
@@ -729,11 +729,11 @@ magic -T /home/vsdflow/open_working_dir/OpenLane/vsdstdcelldesign/libs/sky130A.t
 
 This concludes the PnR flow.
 
-# Word of appretiation 
+## Word of appretiation 
 
-  I would like to thank ![Kunal gosh](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BNw1G8nK%2FT6%2BzlFRNRo8tfA%3D%3D) for this upskilling workshop.
+  I would like to thank ![Kunal Ghosh](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836) for providing with this learning experience and insight into VLSI physical desgin.
 
-# References
+## References
 - ![vlsisystemdesign](https://www.vlsisystemdesign.com)
 - ![Openlane](https://github.com/The-OpenROAD-Project/OpenLane)
 - ![Google-Skywater-PDK](https://github.com/google/skywater-pdk)
