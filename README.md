@@ -3,11 +3,11 @@
 # **Table of Contents**
 
 - [**Introduction**](#Introduction)
-- [**Day 1 - Synthesis of RTL**](#Day-1---Synthesis-of-RTL)
-- [**Day 2 - Good floorplan and vs Bad floorplan and Itroduction to library cells**](#Day-2---Good-floorplan-and-vs-Bad-floorplan-and-Itroduction-to-library-cells)
-- [**Day 3 - Design library cell using Magic Layout and ngspice characterization**](#Day-3---Design-library-cell-using-Magic-Layout-and-ngspice-characterization)
-- [**Day 4 - Pre-layout timing analysis and importance of good clock tree**](#Day-4---Pre-layout-timing-analysis-and-importance-of-good-clock-tree)
-- [**Day 5 - Final steps for RTL2GDS using tritonRoute and openSTA**](#Day-5---Final-steps-for-RTL2GDS-using-tritonRoute-and-openSTA)
+- [**Part 1 - Synthesis of RTL**](#Part-1---Synthesis-of-RTL)
+- [**Part 2 - Good floorplan and vs Bad floorplan and Itroduction to library cells**](#Part-2---Good-floorplan-and-vs-Bad-floorplan-and-Itroduction-to-library-cells)
+- [**Part 3 - Design library cell using Magic Layout and ngspice characterization**](#Part-3---Design-library-cell-using-Magic-Layout-and-ngspice-characterization)
+- [**Part 4 - Pre-layout timing analysis and importance of good clock tree**](#Part-4---Pre-layout-timing-analysis-and-importance-of-good-clock-tree)
+- [**Part 5 - Final steps for RTL2GDS using tritonRoute and openSTA**](#Part-5---Final-steps-for-RTL2GDS-using-tritonRoute-and-openSTA)
 - [**References**](#References)
 
 ## Introduction
@@ -105,7 +105,7 @@ Below is the representation of the RTL to GDSII flow
 
 ![flowchart](images/openlane-flow.png)
 
-## Day 1 - Synthesis of RTL
+## Part 1 - Synthesis of RTL
 
 Aim: we are going to calculate the Flop ratio after the systhesis of RTL of Picorv32a.
 
@@ -130,7 +130,7 @@ run_synthesis
 
 Flop ratio = number of d-flipflops / Total number of cells = 1613/14876 = 0.10842969 .
 
-## Day 2 - Good floorplan and vs Bad floorplan and Itroduction to library cells
+## Part 2 - Good floorplan and vs Bad floorplan and Itroduction to library cells
 
 ### Chip floor planning considerations
 
@@ -236,7 +236,7 @@ run_placement
 
   ![GUNA](images/guna.png)
 
-  ## Day 3 - Design library cell using Magic Layout and ngspice characterization
+  ## Part 3 - Design library cell using Magic Layout and ngspice characterization
 
   ### IO placer revision
 
@@ -450,7 +450,7 @@ When contact is placed, we dont get the DRC error
 ![drc cif](images/cif_mag_2.png) 
 
 
-## Day 4 - Pre-layout timing analysis and importance of good clock tree
+## Part 4 - Pre-layout timing analysis and importance of good clock tree
 
 #### LEF (Library Exchange Format)
 
@@ -665,7 +665,7 @@ Ensure you get positive or zero slack
 
 ![slack db](images/d4_db_slack.png)
 
-## Day 5 - Final steps for RTL2GDS using tritonRoute and openSTA
+## Part 5 - Final steps for RTL2GDS using tritonRoute and openSTA
 
 #### **Routing**
 
