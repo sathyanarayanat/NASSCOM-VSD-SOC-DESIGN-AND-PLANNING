@@ -562,6 +562,8 @@ magic -T ~/Desktop/sky130A.tech lef read tmp/merged.nom.lef def read results/flo
 
 ![d4 placemnt](images/d4_magic_place.png)
 
+![d4 placemnt](images/d4_int_con.png)
+
 The next step is to create pre_sta.conf and my_base.sdc files.
 
 The pre_sta.conf should be placed in ``` ~/Desktop/work/tool/openlane_working_dir/openlane```
